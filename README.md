@@ -58,7 +58,7 @@
             <input type="text" id="mobile" 
                    name="mobile" 
                    placeholder="Enter your Mobile Number" required 
-                   maxlength="10"> 
+                   maxlength="12"> 
   
 
             <label for="gender">Gender:</label> 
