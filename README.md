@@ -1,81 +1,36 @@
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-    <title>Registration Form</title> 
-    <link rel="stylesheet" 
-          href="Registation_Form.css"> 
-</head> 
-  
-<body> 
-    <div class="main"> 
-        <h1>Registration</h1> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-        <form action=""> 
-            <label for="first">First Name:</label> 
-            <input type="text" id="first" 
-                   name="first" 
-                   placeholder="Enter your first name" required> 
-  
-            <label for="last">Last Name:</label> 
-            <input type="text" id="last" 
-                   name="last" 
-                   placeholder="Enter your last name" required> 
+<title>Login Form in HTML and CSS | Codehal</title>
+<link rel="stylesheet" href="login_form.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="wrapper">
+<form action="">
+<h1>Login</h1>
+<div class="input-box">
+<input type="text" placeholder="Username"required>
+<box-icon type='solid' name='user'></box-icon>
+</div>
+<div class="input-box">
+<input type="password"
+placeholder="Password" required>
+<box-icon name='lock-alt' type='solid' ></box-icon>
+</div>
+<div class="remember-forgot">
+    <label><input type="checkbox">Remember me</label>
+<a href="#">Forgot Password?</a>
+</div>
 
-                   <label for="mobile">NID Number:</label> 
-            <input type="text" id="NID" 
-                   name="mobile" 
-                   placeholder="Enter your NID Number" required 
-                   maxlength="16"> 
-  
-            <label for="email">Email:</label> 
-            <input type="email" id="email" 
-                   name="email" 
-                   placeholder="Enter your email" required> 
-  
-            <label for="dob">Date of Birth:</label> 
-            <input type="date" 
-                   id="dob" name="dob" 
-                   placeholder="Enter your DOB" required> 
-  
-            <label for="password">Password:</label> 
-            <input type="password" id="password" 
-                   name="password"
-                   placeholder="Enter your password"
-                   pattern= 
-                   "^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required                    
-                   title="Password must contain at least one number,  
-                       one alphabet, one symbol, and be at  
-                       least 8 characters long"> 
-  
-            <label for="repassword">Re-type Password:</label> 
-            <input type="password" id="repassword" 
-                   name="repassword" 
-                   placeholder="Re-Enter your password" required> 
-            <span id="pass"></span> 
-  
-            <label for="mobile">Contact:</label> 
-            <input type="text" id="mobile" 
-                   name="mobile" 
-                   placeholder="Enter your Mobile Number" required 
-                   maxlength="12"> 
-  
-
-            <label for="gender">Gender:</label> 
-            <select id="gender" name="gender" required> 
-                <option value="male">Male</option> 
-                <option value="female">Female</option> 
-                <option value="other">Other</option> 
-            </select> 
-  
-            <div class="wrap"> 
-                <button type="submit" onclick="solve()"> 
-                  Submit 
-                  </button> 
-            </div> 
-        </form> 
-    </div> 
-    <script src="Registation_Form.js"></script> 
-</body> 
-  
-</html>
+<button type="submit" class="btn">Login</button>
+<div class="register-link">
+    <p> Don't have an account? <a href="Registation_Form.html" >Register</a></p>
+</div>
+</form>
+</div> 
+<body>
